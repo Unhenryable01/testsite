@@ -1,5 +1,5 @@
 {
-  "name": "my-tsx-project",
+  "name": "testsite",
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
@@ -18,5 +18,11 @@
     "typescript": "^4.0.0",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0"
+  },
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
   }
-}
+
