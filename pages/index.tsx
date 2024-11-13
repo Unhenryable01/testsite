@@ -4,7 +4,7 @@ import { ArrowLeft, ExternalLink, Popcorn, X } from 'lucide-react'
 import Link from "next/link"
 import { useEffect, useState } from "react"
 
-import { Alert, AlertDescription } from "/components/ui/alert"
+import { Alert, AlertDescription } from "@/components/ui/alert"
 import { Button } from "@/components/ui/button"
 import {
   Dialog,
