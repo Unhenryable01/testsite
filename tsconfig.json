@@ -2,23 +2,13 @@
   "compilerOptions": {
     "target": "es5",
     "lib": ["dom", "esnext"],
-    "jsx": "preserve",  // This should be 'preserve' for Next.js JSX transformation
+    "jsx": "react",
     "moduleResolution": "node",
     "strict": true,
-    "baseUrl": ".",
+    "baseUrl": ".",  // Add this line to specify the root directory
     "paths": {
-      "@/*": ["*"]
-    },
-    "allowJs": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "incremental": true,
-    "esModuleInterop": true,
-    "module": "esnext",  // Ensures compatibility with dynamic imports
-    "resolveJsonModule": true,
-    "isolatedModules": true
+      "@/*": ["./*"]  // Ensure this line is there for aliasing
+    }
   },
-  "include": ["pages/**/*.tsx", "components/**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": ["pages/**/*.tsx", "components/**/*.tsx"]
 }
